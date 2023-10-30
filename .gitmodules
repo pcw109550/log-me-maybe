@@ -1,0 +1,3 @@
+[submodule "log-me-maybe/lib/forge-std"]
+	path = log-me-maybe/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
