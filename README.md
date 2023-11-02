@@ -53,7 +53,7 @@ WACON2023{storing_rsa_public_modulus_on_ethereum_block_header_with_blooms}
 
 Exploit scripts mostly generalized from [ethgoesbloom].
 
-1. Pick RSA primes $p$, $q$ which size is 512 bits. $N = p q$
+1. Pick RSA primes $p$, $q$ which size is 1024 bits. $N = p q$
 2. Mine topics by running [exploit/log-me-maybe/miner.py](https://github.com/pcw109550/log-me-maybe/blob/main/exploit/log-me-maybe/miner.py). 
 3. Deploy contract [exploit/log-me-maybe/src/Attack.sol](https://github.com/pcw109550/log-me-maybe/blob/main/exploit/log-me-maybe/src/Attack.sol) which receives calldata and writes topic abusing [`LOG4`](https://ethervm.io/#A4) EVM instruction.
 4. Call contract with mined topics.
